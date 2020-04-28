@@ -3,7 +3,7 @@ title: Lazy
 description: Native lazy loading for the web.
 author: Taufik Nurrohman
 type: Markdown
-version: 1.0.0
+version: 1.0.1
 
 use:
   '.\lot\x\layout': 1

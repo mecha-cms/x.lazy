@@ -12,7 +12,7 @@ function lazy($content) {
             return $m[0];
         }
         $out = new \HTML($m[0]);
-        if (isset($out['loading'])) {
+        if (isset($out['loading']) || 0 === \strpos($out['src'], 'data:image/')) {
             return $m[0];
         }
         $out['loading'] = 'lazy';
