@@ -10,9 +10,13 @@ This extension helps you to add the `loading` attribute automatically with value
 Release Notes
 -------------
 
+### 1.1.0
+
+ - [x] Updated for Mecha 3.0.0.
+
 ### 1.0.2
 
- - [@mecha-cms/mecha#96](https://github.com/mecha-cms/mecha/issues/96)
+ - [./mecha-cms/mecha#96](https://github.com/mecha-cms/mecha/issues/96)
 
 ### 1.0.1
 

@@ -2,12 +2,12 @@
 
 function lazy($content) {
     if (
-        false === \strpos($content, '<iframe ') &&
-        false === \strpos($content, '<img ')
+        false === \strpos($content, '</iframe>') &&
+        false === \strpos($content, '<img')
     ) {
         return $content;
     }
-    return \preg_replace_callback('/<(iframe|img)(?:\s[^>]*)?>/', function($m) {
+    return \preg_replace_callback('/<(iframe|img)(?:\s[^>]*)?>/', static function($m) {
         if (false !== \strpos($m[0], ' loading=')) {
             return $m[0];
         }
