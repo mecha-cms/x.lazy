@@ -1,0 +1,8 @@
+{
+  "description": "Native lazy loading for the web.",
+  "license": "GPL-3.0-or-later",
+  "name": "mecha-cms/x.lazy",
+  "require": {
+    "mecha-cms/x.layout": "^2.0.0"
+  }
+}
