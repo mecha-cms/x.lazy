@@ -7,7 +7,7 @@ function lazy($content) {
     ) {
         return $content;
     }
-    return \preg_replace_callback('/<(iframe|img)(?:\s[^>]*)?>/', static function($m) {
+    return \preg_replace_callback('/<(iframe|img)(?:\s[^>]*)?>/', static function ($m) {
         if (false !== \strpos($m[0], ' loading=')) {
             return $m[0];
         }
