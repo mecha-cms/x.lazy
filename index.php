@@ -1,10 +1,10 @@
-<?php namespace x;
+<?php namespace x\lazy;
 
-function lazy($content) {
-    if (
+function content($content) {
+    if (!$content || (
         false === \strpos($content, '</iframe>') &&
         false === \strpos($content, '<img')
-    ) {
+    )) {
         return $content;
     }
     return \preg_replace_callback('/<(iframe|img)(?:\s[^>]*)?>/', static function ($m) {
@@ -20,4 +20,4 @@ function lazy($content) {
     }, $content);
 }
 
-\Hook::set('content', __NAMESPACE__ . "\\lazy", 20);
+\Hook::set('content', __NAMESPACE__ . "\\content", 20);
