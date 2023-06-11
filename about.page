@@ -23,7 +23,7 @@ loading behavior on certain iframes and images, you can add the attribute manual
 default value, so it’s the same as not adding the attribute at all:
 
 ~~~ .html
-<iframe loading="auto" src="/route/to/page.html"></iframe>
+<iframe loading="auto" src="/route/to/embed.html"></iframe>
 ~~~
 
 ~~~ .html
