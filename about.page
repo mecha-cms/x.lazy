@@ -18,16 +18,16 @@ able to use the new `loading` attribute to lazy-load resources without the need 
 a separate JavaScript library. Please note that only images that are below the device viewport by the calculated
 distance load lazily. All images above the viewport, regardless of whether they’re immediately visible, load normally.
 
-This extension helps you to add the `loading` attribute automatically with value of `lazy`. To disable the lazy-loading
-behavior on certain iframes and images, you can add the attribute manually with value of `auto` (as this value is the
-default value, so it’s the same as if you didn’t add the attribute):
+This extension helps you to automatically add the `loading` attribute with the value of `lazy`. To disable the lazy
+loading behavior on certain iframes and images, you can add the attribute manually with the value of `auto`. This is the
+default value, so it’s the same as not adding the attribute at all:
 
 ~~~ .html
-<iframe loading="auto" src="/path/to/page.html"></iframe>
+<iframe loading="auto" src="/route/to/page.html"></iframe>
 ~~~
 
 ~~~ .html
-<img alt="" loading="auto" src="/path/to/image.jpg">
+<img alt="" loading="auto" src="/route/to/image.jpg">
 ~~~
 
  [^1]: [Native Lazy-Loading for the Web](https://web.dev/native-lazy-loading)

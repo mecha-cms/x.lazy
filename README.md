@@ -8,4 +8,4 @@ able to use the new `loading` attribute to lazy-load resources without the need 
 a separate JavaScript library. Please note that only images that are below the device viewport by the calculated
 distance load lazily. All images above the viewport, regardless of whether they’re immediately visible, load normally.
 
-This extension helps you to add the `loading` attribute automatically with value of `lazy`.
+This extension helps you to automatically add the `loading` attribute with the value of `lazy`.
